@@ -21,7 +21,7 @@ const Navigation: React.FC = () => {
         
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            <NavItem href="#home" active>Home</NavItem>
+            <NavItem href="#home">Home</NavItem>
             <NavItem href="#about">About</NavItem>
             <NavItem href="#skills">Skills</NavItem>
             <NavItem href="#projects">Projects</NavItem>

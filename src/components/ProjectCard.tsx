@@ -46,7 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <ul className="list-unstyled">
             {features.map((feature, index) => (
               <li key={index} className="mb-2">
-                <i className="bi bi-check-circle text-success me-2"></i>
+                <i className="bi bi-check-circle text-secondary me-2"></i>
                 {feature.text}
               </li>
             ))}

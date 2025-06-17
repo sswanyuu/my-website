@@ -4,7 +4,7 @@ import { skillCategories } from '../../data/portfolioData';
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="py-5 bg-light">
+    <section id="skills" className="py-5">
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="display-5 fw-bold text-dark mb-4">

@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
               </h1>
             </div>
             <div>
-              <h2 className="h3 text-muted mb-4">{personalInfo.title}</h2>
+              <h2 className="h3 text-secondary mb-4">{personalInfo.title}</h2>
             </div>
             <div>
               <p className="lead text-dark mb-4">

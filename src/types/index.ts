@@ -46,7 +46,6 @@ export interface ButtonProps {
 export interface NavItemProps {
   href: string;
   children: React.ReactNode;
-  active?: boolean;
 }
 
 export interface SocialIconProps {

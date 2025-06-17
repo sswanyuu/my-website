@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavItemProps } from '../types';
 
-const NavItem: React.FC<NavItemProps> = ({ href, children, active = false }) => {
-  const combinedClasses = `nav-link fw-medium px-3 py-2 mx-1 rounded-3 text-decoration-none ${
-    active ? 'active' : ''
+const NavItem: React.FC<NavItemProps> = ({ href, children}) => {
+  const combinedClasses =
+    `nav-link fw-medium px-3 py-2 mx-1 rounded-3 text-decoration-none  ''
   }`.trim();
 
   return (
