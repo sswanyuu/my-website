@@ -8,13 +8,12 @@ const Footer: React.FC = () => {
         <div className="row align-items-center">
           <div className="col-md-6">
             <p className="mb-0">
-              © 2024 {personalInfo.name}. Made with ❤️ in {personalInfo.location}
+              © 2024 {personalInfo.name}. Made with ❤️ in{' '}
+              {personalInfo.location}
             </p>
           </div>
           <div className="col-md-6 text-md-end">
-            <p className="mb-0">
-              Built with React & Bootstrap
-            </p>
+            <p className="mb-0">Built with React & Bootstrap</p>
           </div>
         </div>
       </div>
@@ -22,4 +21,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer; 
+export default Footer;

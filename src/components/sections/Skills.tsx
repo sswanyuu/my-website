@@ -10,7 +10,7 @@ const Skills: React.FC = () => {
           <h2 className="display-5 fw-bold text-dark mb-4">
             Skills & Expertise
           </h2>
-          <hr className="w-25 mx-auto border-3 border-primary"/>
+          <hr className="w-25 mx-auto border-3 border-primary" />
         </div>
         <div className="row g-4">
           {skillCategories.map((category, index) => (
@@ -22,4 +22,4 @@ const Skills: React.FC = () => {
   );
 };
 
-export default Skills; 
+export default Skills;

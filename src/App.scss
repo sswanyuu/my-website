@@ -1,9 +1,9 @@
 // Pre-define variables and import Bootstrap foundations
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/variables-dark";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/maps";
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/variables-dark';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/maps';
 
 // Override Bootstrap variables BEFORE rebuilding theme-colors
 $primary: #3282a7;
@@ -18,18 +18,18 @@ $min-contrast-ratio: 2.8;
 
 // Rebuild theme-colors map with new primary colors
 $theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
-  "light": $light,
-  "dark": $dark,
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
 );
 
 // Convert to RGB for CSS variables
-$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, '$value');
 
 // Utilities colors for text and background
 $utilities-colors: map-merge($theme-colors-rgb, $utilities-colors);
@@ -38,16 +38,16 @@ $utilities-colors: map-merge($theme-colors-rgb, $utilities-colors);
 $utilities-text-colors: map-loop(
   $utilities-colors,
   rgba-css-var,
-  "$key",
-  "text"
+  '$key',
+  'text'
 );
 
 // Background colors utilities
-$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, '$key', 'bg');
 
 // Custom variables following company standards
-$title-font: "Patrick Hand SC", cursive;
-$body-font: "Poppins", sans-serif;
+$title-font: 'Patrick Hand SC', cursive;
+$body-font: 'Poppins', sans-serif;
 
 // Custom CSS variables
 :root {
@@ -58,7 +58,7 @@ $body-font: "Poppins", sans-serif;
 }
 
 // Final Bootstrap import
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';
 
 /* Global Font and Background */
 body {
@@ -88,7 +88,7 @@ h6 {
   overflow: hidden;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: -100%;

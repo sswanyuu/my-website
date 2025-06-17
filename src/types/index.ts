@@ -4,7 +4,6 @@ export interface SocialLink {
   icon: string;
 }
 
-
 export interface SkillCategory {
   title: string;
   icon: string;
@@ -66,4 +65,4 @@ export interface ProjectCardProps {
 
 export interface ContactInfoItemProps {
   info: ContactInfo;
-} 
+}

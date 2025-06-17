@@ -23,17 +23,17 @@ const Hero: React.FC = () => {
             </div>
             <div>
               <div className="d-flex flex-wrap gap-3 mb-4">
-                <Button 
-                  variant="primary" 
-                  size="large" 
+                <Button
+                  variant="primary"
+                  size="large"
                   href="#projects"
                   icon="bi-code-square"
                 >
                   View My Work
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="large" 
+                <Button
+                  variant="outline"
+                  size="large"
                   href="#contact"
                   icon="bi-envelope"
                 >
@@ -57,8 +57,8 @@ const Hero: React.FC = () => {
           </div>
           <div className="col-lg-6 text-center">
             <div>
-              <img 
-                src={personalInfo.profileImage} 
+              <img
+                src={personalInfo.profileImage}
                 alt={`${personalInfo.name} - Profile`}
                 className="img-fluid rounded-circle shadow"
                 style={{ maxWidth: '300px', width: '100%' }}
@@ -71,4 +71,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero; 
+export default Hero;

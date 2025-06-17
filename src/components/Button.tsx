@@ -8,36 +8,46 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   icon,
   children,
-  className = ''
+  className = '',
 }) => {
-  const baseClasses = 'btn text-decoration-none d-inline-flex align-items-center fw-semibold';
-  
+  const baseClasses =
+    'btn text-decoration-none d-inline-flex align-items-center fw-semibold';
+
   const variantClasses = {
     primary: 'btn-primary',
     outline: 'btn-outline-primary',
     secondary: 'btn-outline-secondary',
-    'icon-only': 'btn-primary'
+    'icon-only': 'btn-primary',
   };
-  
+
   const sizeClasses = {
     large: 'btn-lg',
     default: '',
-    small: 'btn-sm'
+    small: 'btn-sm',
   };
-  
-  const iconOnlyClasses = variant === 'icon-only' ? 'rounded-circle justify-content-center p-2' : 'rounded-pill';
-  
+
+  const iconOnlyClasses =
+    variant === 'icon-only'
+      ? 'rounded-circle justify-content-center p-2'
+      : 'rounded-pill';
+
   const combinedClasses = `
     ${baseClasses} 
     ${variantClasses[variant]} 
     ${variant !== 'icon-only' ? sizeClasses[size] : ''}
     ${iconOnlyClasses}
     ${className}
-  `.trim().replace(/\s+/g, ' ');
+  `
+    .trim()
+    .replace(/\s+/g, ' ');
 
   const content = (
     <>
-      {icon && <i className={`bi ${icon} ${variant !== 'icon-only' ? 'me-2' : ''}`}></i>}
+      {icon && (
+        <i
+          className={`bi ${icon} ${variant !== 'icon-only' ? 'me-2' : ''}`}
+        ></i>
+      )}
       {variant !== 'icon-only' && <span>{children}</span>}
     </>
   );
@@ -57,4 +67,4 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
-export default Button; 
+export default Button;

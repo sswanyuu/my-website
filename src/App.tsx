@@ -2,14 +2,14 @@ import React from 'react';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.scss';
-import { 
+import {
   Hero,
   About,
   Skills,
   Projects,
   Contact,
   Footer,
-  Navigation
+  Navigation,
 } from './components/sections/index';
 
 const App: React.FC = () => {
@@ -26,4 +26,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App; 
+export default App;

@@ -8,18 +8,16 @@ const SkillCard: React.FC<SkillCardProps> = ({ category }) => {
     <div className="col-lg-4 mb-4">
       <div className="card h-100 shadow-sm border-0 rounded-4">
         <div className="card-body text-center p-4">
-          <i 
+          <i
             className={`bi ${icon} text-primary mb-4`}
             style={{ fontSize: '3rem' }}
           ></i>
-          
-          <h5 className="card-title text-dark fw-semibold mb-4">
-            {title}
-          </h5>
-          
+
+          <h5 className="card-title text-dark fw-semibold mb-4">{title}</h5>
+
           <div className="d-flex flex-wrap justify-content-center gap-2">
             {skills.map((skill, index) => (
-              <span 
+              <span
                 key={index}
                 className="badge bg-primary px-3 py-2 rounded-pill fw-medium text-white"
               >
@@ -33,4 +31,4 @@ const SkillCard: React.FC<SkillCardProps> = ({ category }) => {
   );
 };
 
-export default SkillCard; 
+export default SkillCard;

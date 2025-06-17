@@ -10,10 +10,10 @@ const Projects: React.FC = () => {
           <h2 className="display-5 fw-bold text-dark mb-4">
             Featured Projects
           </h2>
-          <hr className="w-25 mx-auto border-3 border-primary"/>
+          <hr className="w-25 mx-auto border-3 border-primary" />
         </div>
         <div className="row g-4">
-          {projects.map((project) => (
+          {projects.map(project => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
@@ -22,4 +22,4 @@ const Projects: React.FC = () => {
   );
 };
 
-export default Projects; 
+export default Projects;

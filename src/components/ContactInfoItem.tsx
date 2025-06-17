@@ -8,7 +8,7 @@ const ContactInfoItem: React.FC<ContactInfoItemProps> = ({ info }) => {
     switch (type) {
       case 'email':
         return (
-          <a 
+          <a
             href={href || `mailto:${content}`}
             className="text-decoration-none text-dark"
           >
@@ -17,7 +17,7 @@ const ContactInfoItem: React.FC<ContactInfoItemProps> = ({ info }) => {
         );
       case 'link':
         return (
-          <a 
+          <a
             href={href}
             className="text-decoration-none text-dark"
             target="_blank"
@@ -28,25 +28,19 @@ const ContactInfoItem: React.FC<ContactInfoItemProps> = ({ info }) => {
         );
       case 'text':
       default:
-        return (
-          <p className="mb-0">
-            {content}
-          </p>
-        );
+        return <p className="mb-0">{content}</p>;
     }
   };
 
   return (
     <div className="col-md-4 mb-4 mb-md-0">
       <div className="d-flex flex-column flex-md-row align-items-center align-items-md-start text-center text-md-start">
-        <i 
+        <i
           className={`bi ${icon} text-white me-md-3 mb-2 mb-md-0`}
           style={{ fontSize: '2rem' }}
         ></i>
         <div>
-          <h6 className="text-white fw-semibold mb-1">
-            {title}
-          </h6>
+          <h6 className="text-white fw-semibold mb-1">{title}</h6>
           {renderContent()}
         </div>
       </div>
@@ -54,4 +48,4 @@ const ContactInfoItem: React.FC<ContactInfoItemProps> = ({ info }) => {
   );
 };
 
-export default ContactInfoItem; 
+export default ContactInfoItem;

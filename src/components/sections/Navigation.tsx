@@ -4,21 +4,24 @@ import { personalInfo } from '../../data/portfolioData';
 
 const Navigation: React.FC = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm position-fixed w-100" style={{ zIndex: 1000 }}>
+    <nav
+      className="navbar navbar-expand-lg navbar-light bg-white shadow-sm position-fixed w-100"
+      style={{ zIndex: 1000 }}
+    >
       <div className="container">
         <a className="navbar-brand fw-bold fs-4 text-primary" href="#home">
           {personalInfo.name}
         </a>
-        
-        <button 
-          className="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        
+
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <NavItem href="#home">Home</NavItem>
@@ -33,4 +36,4 @@ const Navigation: React.FC = () => {
   );
 };
 
-export default Navigation; 
+export default Navigation;
