@@ -1,0 +1,168 @@
+a {
+  margin: 30px 10px 30px 10px;
+  padding: 10px;
+  color: #f4b860;
+  font-family: "Merriweather", serif;
+  text-decoration: none;
+}
+
+a:hover {
+  margin: 30px 10px 30px 10px;
+  padding: 10px;
+  color: #f4d6cc;
+  font-family: "Merriweather", serif;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  table-layout: fixed;
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  margin: 0 auto 0 auto;
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 5.625rem;
+  color: #668f80;
+  /*#3c3c3c*/
+  line-height: 2;
+  /* 1em=100%=16px */
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #668f80;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #de3c4b;
+  font-weight: bolder;
+}
+
+hr {
+  border: none;
+  border-top: dotted #668f80;
+  border-width: 5px;
+  width: 5%;
+  height: 0;
+  margin: 100px auto;
+}
+
+p {
+  line-height: 2;
+  padding: 10px;
+  margin: 5px auto;
+}
+
+/******************class selectors************/
+.art-img {
+  margin-left: 30px;
+  width: 25%;
+  float: right;
+}
+
+.btn {
+  color: #3c3c3c;
+  font-size: 1.2rem;
+  padding: 20px 37px;
+  margin: 40px auto;
+  /* Skateboard - primary 1 */
+  background: #f4d6cc;
+  box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.3),
+    -3px -3px 5px rgba(255, 255, 255, 0.25), 2px 2px 2px rgba(0, 0, 0, 0.25),
+    3px 2px 4px rgba(0, 0, 0, 0.36);
+  border-radius: 9px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #f4d6cc;
+  font-size: 1.2rem;
+  padding: 20px 37px;
+  margin: 40px auto;
+  background: #de3c4b;
+  box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.3),
+    -3px -3px 5px rgba(255, 255, 255, 0.25), 2px 2px 2px rgba(0, 0, 0, 0.25),
+    3px 2px 4px rgba(0, 0, 0, 0.36);
+  border-radius: 9px;
+  text-decoration: none;
+}
+
+.bottom-container {
+  margin: 0;
+  padding: 50px 0 20px;
+  background: #de3c4b;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 10%;
+  top: 300px;
+  width: auto;
+  height: 80px;
+}
+
+.contact-message {
+  margin: 20px auto 40px;
+}
+
+.copyright {
+  color: #f4b860;
+  font-size: 0.75rem;
+  padding: 40px 0 20px;
+}
+
+.design-img {
+  margin-right: 30px;
+  width: 25%;
+  float: left;
+}
+
+.intro {
+  width: 40%;
+}
+
+.middle-container {
+  margin: 100px auto 80px;
+}
+
+.skills {
+}
+
+.skill-row {
+  margin: 60px auto;
+  width: 50%;
+  text-align: left;
+  line-height: 2;
+}
+
+.top-container {
+  background-color: #f4d6cc;
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 50px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 10%;
+  top: 100px;
+  width: auto;
+  height: 120px;
+  transform: rotateY(180deg);
+}
+
+/*
+
+.bottom-cloud {
+  position: absolute;
+  left: 30%;
+  bottom: 300px;
+}
+*/
