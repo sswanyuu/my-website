@@ -9,17 +9,15 @@ const Hero: React.FC = () => {
         <div className="row align-items-center g-5">
           <div className="col-lg-6">
             <div>
-              <h1 className="display-4 fw-bold text-dark mb-3">
+              <h1 className="display-4 fw-bold mb-3">
                 Hello! I'm {personalInfo.name}
               </h1>
             </div>
             <div>
-              <h2 className="h3 text-secondary mb-4">{personalInfo.title}</h2>
+              <h2 className="h3 text-primary mb-4">{personalInfo.title}</h2>
             </div>
             <div>
-              <p className="lead text-dark mb-4">
-                Based in {personalInfo.location}
-              </p>
+              <p className="lead mb-4">Based in {personalInfo.location}</p>
             </div>
             <div>
               <div className="d-flex flex-wrap gap-3 mb-4">
@@ -56,12 +54,14 @@ const Hero: React.FC = () => {
             </div>
           </div>
           <div className="col-lg-6 text-center">
-            <div>
+            <div
+              className="ratio ratio-1x1 mx-auto rounded-circle overflow-hidden shadow"
+              style={{ maxWidth: '300px' }}
+            >
               <img
                 src={personalInfo.profileImage}
                 alt={`${personalInfo.name} - Profile`}
-                className="img-fluid rounded-circle shadow"
-                style={{ maxWidth: '300px', width: '100%' }}
+                className="object-fit-cover w-100 h-100"
               />
             </div>
           </div>

@@ -10,7 +10,7 @@ const ContactInfoItem: React.FC<ContactInfoItemProps> = ({ info }) => {
         return (
           <a
             href={href || `mailto:${content}`}
-            className="text-decoration-none text-dark"
+            className="text-decoration-none"
           >
             {content}
           </a>
@@ -19,7 +19,7 @@ const ContactInfoItem: React.FC<ContactInfoItemProps> = ({ info }) => {
         return (
           <a
             href={href}
-            className="text-decoration-none text-dark"
+            className="text-decoration-none"
             target="_blank"
             rel="noopener noreferrer"
           >

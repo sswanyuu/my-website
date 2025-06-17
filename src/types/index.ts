@@ -36,9 +36,11 @@ export interface ButtonProps {
   variant?: 'primary' | 'outline' | 'secondary' | 'icon-only';
   size?: 'large' | 'default' | 'small';
   href?: string;
+  target?: '_blank' | '_self' | '_parent' | '_top';
+  rel?: string;
   onClick?: () => void;
   icon?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
 }
 

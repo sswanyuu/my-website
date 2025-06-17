@@ -13,7 +13,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ category }) => {
             style={{ fontSize: '3rem' }}
           ></i>
 
-          <h5 className="card-title text-dark fw-semibold mb-4">{title}</h5>
+          <h5 className="card-title fw-semibold mb-4">{title}</h5>
 
           <div className="d-flex flex-wrap justify-content-center gap-2">
             {skills.map((skill, index) => (

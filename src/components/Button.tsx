@@ -5,6 +5,8 @@ const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
   size = 'default',
   href,
+  target,
+  rel,
   onClick,
   icon,
   children,
@@ -54,7 +56,13 @@ const Button: React.FC<ButtonProps> = ({
 
   if (href) {
     return (
-      <a href={href} className={combinedClasses} onClick={onClick}>
+      <a
+        href={href}
+        className={combinedClasses}
+        onClick={onClick}
+        target={target}
+        rel={rel}
+      >
         {content}
       </a>
     );

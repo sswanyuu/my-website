@@ -1,5 +1,6 @@
 import React from 'react';
 import { ProjectCardProps } from '../types';
+import { Button } from './index';
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const { title, emoji, description, technologies, features, githubUrl } =
@@ -11,24 +12,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className="card-body p-4">
           {/* Header with title and GitHub link */}
           <div className="d-flex justify-content-between align-items-start mb-3">
-            <h5 className="card-title text-dark fw-semibold">
+            <h5 className="card-title fw-semibold">
               {emoji && `${emoji} `}
               {title}
             </h5>
-            <a
+            <Button
+              variant="icon-only"
               href={githubUrl}
-              className="text-decoration-none d-flex align-items-center justify-content-center rounded-circle bg-light p-2"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`View ${title} on GitHub`}
-              style={{ width: '40px', height: '40px' }}
-            >
-              <i className="bi bi-github fs-5 text-dark"></i>
-            </a>
+              icon="bi-github"
+              className="btn-outline-secondary"
+            />
           </div>
 
           {/* Project description */}
-          <p className="card-text text-dark mb-3">{description}</p>
+          <p className="card-text mb-3">{description}</p>
 
           {/* Technology badges */}
           <div className="mb-3 d-flex flex-wrap gap-2">
@@ -46,7 +45,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <ul className="list-unstyled">
             {features.map((feature, index) => (
               <li key={index} className="mb-2">
-                <i className="bi bi-check-circle text-secondary me-2"></i>
+                <i className="bi bi-check-circle text-primary me-2"></i>
                 {feature.text}
               </li>
             ))}

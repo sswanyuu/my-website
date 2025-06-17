@@ -1,5 +1,6 @@
 import React from 'react';
 import { SocialIconProps } from '../types';
+import { Button } from './index';
 
 const SocialIcon: React.FC<SocialIconProps> = ({
   platform,
@@ -8,46 +9,27 @@ const SocialIcon: React.FC<SocialIconProps> = ({
   variant = 'default',
   className = '',
 }) => {
-  const baseClasses =
-    'text-decoration-none d-inline-flex align-items-center justify-content-center rounded-circle';
-
-  const variantClasses = {
-    default: 'bg-light text-dark',
-    large: 'bg-white text-dark',
-    small: 'bg-light text-dark',
+  const getButtonSize = () => {
+    switch (variant) {
+      case 'large':
+        return 'large';
+      case 'small':
+        return 'small';
+      default:
+        return 'default';
+    }
   };
-
-  const sizeClasses = {
-    default: 'p-2',
-    large: 'p-3',
-    small: 'p-1',
-  };
-
-  const iconSizes = {
-    default: 'fs-5',
-    large: 'fs-3',
-    small: 'fs-6',
-  };
-
-  const combinedClasses =
-    `${baseClasses} ${variantClasses[variant]} ${sizeClasses[variant]} ${className}`.trim();
 
   return (
-    <a
+    <Button
+      variant="icon-only"
+      size={getButtonSize()}
       href={url}
-      className={combinedClasses}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={`Visit ${platform} profile`}
-      style={{
-        width:
-          variant === 'large' ? '60px' : variant === 'small' ? '30px' : '40px',
-        height:
-          variant === 'large' ? '60px' : variant === 'small' ? '30px' : '40px',
-      }}
-    >
-      <i className={`bi ${icon} ${iconSizes[variant]}`}></i>
-    </a>
+      icon={icon}
+      className={className}
+    />
   );
 };
 

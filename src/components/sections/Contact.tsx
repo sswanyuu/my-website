@@ -4,7 +4,7 @@ import { contactInfo, socialLinks } from '../../data/portfolioData';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-5 text-dark">
+    <section id="contact" className="py-5">
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="display-5 fw-bold mb-4">Let's Connect</h2>
