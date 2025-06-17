@@ -1,0 +1,70 @@
+export interface SocialLink {
+  platform: string;
+  url: string;
+  icon: string;
+}
+
+
+export interface SkillCategory {
+  title: string;
+  icon: string;
+  skills: string[];
+}
+
+export interface ProjectFeature {
+  text: string;
+}
+
+export interface Project {
+  id: string;
+  title: string;
+  emoji: string;
+  description: string;
+  technologies: string[];
+  features: ProjectFeature[];
+  githubUrl: string;
+}
+
+export interface ContactInfo {
+  icon: string;
+  title: string;
+  content: string;
+  type: 'email' | 'text' | 'link';
+  href?: string;
+}
+
+export interface ButtonProps {
+  variant?: 'primary' | 'outline' | 'secondary' | 'icon-only';
+  size?: 'large' | 'default' | 'small';
+  href?: string;
+  onClick?: () => void;
+  icon?: string;
+  children: React.ReactNode;
+  className?: string;
+}
+
+export interface NavItemProps {
+  href: string;
+  children: React.ReactNode;
+  active?: boolean;
+}
+
+export interface SocialIconProps {
+  platform: string;
+  url: string;
+  icon: string;
+  variant?: 'default' | 'large' | 'small';
+  className?: string;
+}
+
+export interface SkillCardProps {
+  category: SkillCategory;
+}
+
+export interface ProjectCardProps {
+  project: Project;
+}
+
+export interface ContactInfoItemProps {
+  info: ContactInfo;
+} 
