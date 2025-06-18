@@ -1,0 +1,83 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello! I'm Olga Shih",
+    "title": "Frontend Engineer",
+    "location": "Based in Sydney, Australia",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Hi there! I'm Olga, a passionate Frontend Engineer based in Sydney. I specialize in creating beautiful, responsive web applications using React and Vue.js. With a keen eye for design and a love for clean code, I bring ideas to life through modern web technologies. When I'm not coding, you'll find me exploring Sydney's amazing coffee scene or diving into the latest frontend trends."
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "categories": {
+      "frontend": "Frontend Development",
+      "tools": "Tools",
+      "backend": "Backend & Integration"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "features": "Key Features",
+    "playlistCoverGenerator": {
+      "title": "Playlist Cover AI Generator",
+      "description": "A web application that generates unique cover art for Spotify playlists using AI. Create stunning, personalized playlist covers with just a few clicks!",
+      "features": [
+        "AI-powered cover generation",
+        "Spotify API integration",
+        "Modern UI/UX design"
+      ]
+    },
+    "queenSelectShop": {
+      "title": "Queen Select Shop",
+      "description": "A modern e-commerce platform built with React and TypeScript, featuring Redux for state management and Stripe integration for secure payments.",
+      "features": [
+        "Redux state management",
+        "Stripe payment integration",
+        "Responsive design",
+        "Shopping cart functionality"
+      ]
+    },
+    "sweetTraveling": {
+      "title": "Sweet Traveling",
+      "description": "A beautiful travel website showcasing destinations with smooth animations and modern design using advanced SCSS techniques.",
+      "features": [
+        "Smooth CSS animations",
+        "Advanced SCSS features",
+        "Mobile-first design",
+        "Interactive components"
+      ]
+    },
+    "monsterChatroom": {
+      "title": "Monster Chatroom",
+      "description": "A real-time chat application built with React and Socket.io, featuring AI-powered chatbots and modern messaging interface.",
+      "features": [
+        "Real-time messaging",
+        "AI chatbot integration",
+        "Modern chat interface",
+        "Socket.io implementation"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together on your next project",
+    "info": {
+      "location": "Location",
+      "email": "Email"
+    },
+    "connect": "Follow me on"
+  },
+  "footer": {
+    "rights": "© 2024 Olga Shih. All rights reserved. Made with ❤️ in Sydney, Australia"
+  }
+}

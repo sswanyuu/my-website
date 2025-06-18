@@ -10,17 +10,9 @@ export interface SkillCategory {
   skills: string[];
 }
 
-export interface ProjectFeature {
-  text: string;
-}
-
 export interface Project {
   id: string;
-  title: string;
-  emoji: string;
-  description: string;
   technologies: string[];
-  features: ProjectFeature[];
   githubUrl: string;
 }
 

@@ -1,9 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { NavItem } from '../index';
-import { personalInfo } from '../../data/portfolioData';
 import ThemeToggle from '../ThemeToggle';
+import LanguageSwitcher from '../LanguageSwitcher';
 
 const Navigation: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <nav
       className="navbar navbar-expand-lg shadow-sm position-fixed w-100"
@@ -11,7 +14,7 @@ const Navigation: React.FC = () => {
     >
       <div className="container">
         <a className="navbar-brand fw-bold fs-4 text-primary" href="#home">
-          {personalInfo.name}
+          Olga Shih
         </a>
 
         <button
@@ -25,13 +28,16 @@ const Navigation: React.FC = () => {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto me-3">
-            <NavItem href="#home">Home</NavItem>
-            <NavItem href="#about">About</NavItem>
-            <NavItem href="#skills">Skills</NavItem>
-            <NavItem href="#projects">Projects</NavItem>
-            <NavItem href="#contact">Contact</NavItem>
+            <NavItem href="#home">{t('navigation.home')}</NavItem>
+            <NavItem href="#about">{t('navigation.about')}</NavItem>
+            <NavItem href="#skills">{t('navigation.skills')}</NavItem>
+            <NavItem href="#projects">{t('navigation.projects')}</NavItem>
+            <NavItem href="#contact">{t('navigation.contact')}</NavItem>
           </ul>
-          <ThemeToggle />
+          <div className="d-flex gap-2">
+            <LanguageSwitcher />
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </nav>

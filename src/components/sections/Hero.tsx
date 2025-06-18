@@ -1,23 +1,24 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button, SocialIcon } from '../index';
-import { personalInfo, socialLinks } from '../../data/portfolioData';
+import { socialLinks } from '../../data/portfolioData';
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="home" className="min-vh-100 d-flex align-items-center py-5">
       <div className="container">
         <div className="row align-items-center g-5">
           <div className="col-lg-6">
             <div>
-              <h1 className="display-4 fw-bold mb-3">
-                Hello! I'm {personalInfo.name}
-              </h1>
+              <h1 className="display-4 fw-bold mb-3">{t('hero.greeting')}</h1>
             </div>
             <div>
-              <h2 className="h3 text-primary mb-4">{personalInfo.title}</h2>
+              <h2 className="h3 text-primary mb-4">{t('hero.title')}</h2>
             </div>
             <div>
-              <p className="lead mb-4">Based in {personalInfo.location}</p>
+              <p className="lead mb-4">{t('hero.location')}</p>
             </div>
             <div>
               <div className="d-flex flex-wrap gap-3 mb-4">
@@ -27,7 +28,7 @@ const Hero: React.FC = () => {
                   href="#projects"
                   icon="bi-code-square"
                 >
-                  View My Work
+                  {t('hero.viewWork')}
                 </Button>
                 <Button
                   variant="outline"
@@ -35,7 +36,7 @@ const Hero: React.FC = () => {
                   href="#contact"
                   icon="bi-envelope"
                 >
-                  Get In Touch
+                  {t('hero.getInTouch')}
                 </Button>
               </div>
             </div>
@@ -59,8 +60,8 @@ const Hero: React.FC = () => {
               style={{ maxWidth: '300px' }}
             >
               <img
-                src={personalInfo.profileImage}
-                alt={`${personalInfo.name} - Profile`}
+                src="/yu-profile.jpg"
+                alt={`Olga Shih - Profile`}
                 className="object-fit-cover w-100 h-100"
               />
             </div>

@@ -1,0 +1,79 @@
+{
+  "navigation": {
+    "home": "首頁",
+    "about": "關於我",
+    "skills": "技能",
+    "projects": "作品集",
+    "contact": "聯絡我"
+  },
+  "hero": {
+    "greeting": "哈囉！我是 Olga Shih",
+    "title": "前端工程師",
+    "location": "目前居住在澳洲雪梨 🦘",
+    "viewWork": "查看我的作品",
+    "getInTouch": "與我聯絡"
+  },
+  "about": {
+    "title": "關於我",
+    "description": "Hi，我是 Olga，一位注重產品效能、使用者體驗與設計細節的前端／全端工程師。我擅長開發會員系統、串接第三方支付、建構多語系網站，並在與設計師合作時，能精準將視覺稿轉譯成高品質且具互動性的 UI 介面。近期，我開始嘗試將 AI、資料呈現與網頁設計結合，探索更具個人風格與社群互動性的專案形式。我非常期待參與開發具有文化導向與敘事性的網站，讓技術成為傳遞價值與故事的媒介。無論是協助傳遞文化價值、公共議題的靜態網站，或是與團隊共同打造具互動性與敘事性的使用者介面，我都能提供兼具技術與美感的解決方案，實現設計與功能的平衡。"
+  },
+  "skills": {
+    "title": "技能與技術",
+    "categories": {
+      "frontend": "前端開發",
+      "tools": "工具",
+      "backend": "後端與整合"
+    }
+  },
+  "projects": {
+    "title": "精選作品",
+    "features": "主要功能",
+    "playlistCoverGenerator": {
+      "title": "播放清單封面 AI 生成網站",
+      "description": "藉由參考歌單內的歌曲讓 AI 生成 Spotify 播放清單獨特封面的功能式網站。只需要簡單幾步驟就可以打照出個人化播放清單封面！",
+      "features": ["AI 整合功能", "Spotify API 整合", "現代化 UI/UX 設計"]
+    },
+    "queenSelectShop": {
+      "title": "Queen Select 購物網站",
+      "description": "現代化電子商務平台，具備完整商品頁面、登入、加入購物車、結帳及整合付款等功能。",
+      "features": [
+        "firebase 整合",
+        "Redux 狀態管理",
+        "Stripe 付款功能",
+        "響應式設計"
+      ]
+    },
+    "sweetTraveling": {
+      "title": "旅行網站",
+      "description": "使用進階 SCSS 技術展示旅遊網站整合性服務的 UI 設計，具備流暢動畫和現代化設計。",
+      "features": [
+        "進階 SCSS 功能",
+        "Flexbox 布局",
+        "行動裝置優先設計",
+        "互動式元件"
+      ]
+    },
+    "monsterChatroom": {
+      "title": "怪獸聊天室",
+      "description": "使用 React 和 Socket.io 建構的即時聊天應用程式，具備 AI 聊天機器人和現代化訊息介面。",
+      "features": [
+        "即時訊息傳遞",
+        "AI 聊天機器人整合",
+        "現代化聊天介面",
+        "Socket.io 實作"
+      ]
+    }
+  },
+  "contact": {
+    "title": "與我聯絡",
+    "subtitle": "讓我們一起合作您的下一個專案吧！",
+    "info": {
+      "location": "位置",
+      "email": "電子郵件"
+    },
+    "connect": "瀏覽我在社交平台上的文章，一起討論吧！"
+  },
+  "footer": {
+    "rights": "© 2024 Olga Shih 保留所有權利。"
+  }
+}
