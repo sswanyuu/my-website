@@ -3,6 +3,12 @@ import { useTranslation } from 'react-i18next';
 import { Button, SocialIcon } from '../index';
 import { socialLinks } from '../../data/portfolioData';
 
+// Helper function to get correct asset path for GitHub Pages
+const getAssetPath = (path: string) => {
+  const publicUrl = process.env.PUBLIC_URL || '';
+  return `${publicUrl}${path}`;
+};
+
 const Hero: React.FC = () => {
   const { t } = useTranslation();
 
@@ -60,7 +66,7 @@ const Hero: React.FC = () => {
               style={{ maxWidth: '300px' }}
             >
               <img
-                src="/yu-profile.jpg"
+                src={getAssetPath('/yu-profile.jpg')}
                 alt={`Olga Shih - Profile`}
                 className="object-fit-cover w-100 h-100"
               />

@@ -1,4 +1,10 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  useCallback,
+} from 'react';
 
 type Theme = 'light' | 'dark' | 'auto';
 type ResolvedTheme = 'light' | 'dark';
@@ -29,22 +35,25 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>('light');
 
   // Detect system preference
-  const getSystemPreference = (): ResolvedTheme => {
+  const getSystemPreference = useCallback((): ResolvedTheme => {
     if (typeof window !== 'undefined') {
       return window.matchMedia('(prefers-color-scheme: dark)').matches
         ? 'dark'
         : 'light';
     }
     return 'light';
-  };
+  }, []);
 
   // Resolve theme based on current setting
-  const resolveTheme = (currentTheme: Theme): ResolvedTheme => {
-    if (currentTheme === 'auto') {
-      return getSystemPreference();
-    }
-    return currentTheme;
-  };
+  const resolveTheme = useCallback(
+    (currentTheme: Theme): ResolvedTheme => {
+      if (currentTheme === 'auto') {
+        return getSystemPreference();
+      }
+      return currentTheme;
+    },
+    [getSystemPreference]
+  );
 
   // Load theme from localStorage on mount
   useEffect(() => {
