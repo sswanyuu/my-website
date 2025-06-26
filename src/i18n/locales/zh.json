@@ -28,6 +28,7 @@
   "projects": {
     "title": "精選作品",
     "features": "主要功能",
+    "viewGithub": "在 GitHub 上查看",
     "playlistCoverGenerator": {
       "title": "播放清單封面 AI 生成網站",
       "description": "藉由參考歌單內的歌曲讓 AI 生成 Spotify 播放清單獨特封面的功能式網站。只需要簡單幾步驟就可以打照出個人化播放清單封面！",

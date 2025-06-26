@@ -14,6 +14,7 @@ export interface Project {
   id: string;
   technologies: string[];
   githubUrl: string;
+  image?: string;
 }
 
 export interface ContactInfo {

@@ -28,6 +28,7 @@
   "projects": {
     "title": "Featured Projects",
     "features": "Key Features",
+    "viewGithub": "View on GitHub",
     "playlistCoverGenerator": {
       "title": "Playlist Cover AI Generator",
       "description": "A web application that generates unique cover art for Spotify playlists using AI. Create stunning, personalized playlist covers with just a few clicks!",

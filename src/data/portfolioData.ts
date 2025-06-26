@@ -27,7 +27,16 @@ export const skillCategories: SkillCategory[] = [
   {
     title: 'Tools',
     icon: 'bi-gear',
-    skills: ['Webpack', 'Vite', 'Git', 'Cursor', 'Figma', 'Jira'],
+    skills: [
+      'Webpack',
+      'Vite',
+      'Git',
+      'Cursor',
+      'Figma',
+      'Jira',
+      'Claude Code',
+      'Cursor AI',
+    ],
   },
   {
     title: 'Frontend Development',
@@ -76,21 +85,25 @@ export const projects: Project[] = [
       'Leonardo AI API',
     ],
     githubUrl: 'https://github.com/sswanyuu/playlist-cover-generator',
+    image: `${process.env.PUBLIC_URL}/projects/playlist-cover-generator.png`,
   },
   {
     id: 'queenSelectShop',
     technologies: ['TypeScript', 'React', 'Redux', 'Stripe'],
     githubUrl: 'https://github.com/sswanyuu/queen-select-shop',
+    image: `${process.env.PUBLIC_URL}/projects/queen-select-shop.png`,
   },
   {
     id: 'sweetTraveling',
     technologies: ['SCSS', 'Animations', 'Responsive Design'],
     githubUrl: 'https://github.com/sswanyuu/sweet-traveling',
+    image: `${process.env.PUBLIC_URL}/projects/sweet-traveling.png`,
   },
   {
     id: 'monsterChatroom',
     technologies: ['React', 'Socket.io', 'AI', 'Real-time'],
     githubUrl: 'https://github.com/sswanyuu/monster-chatroom',
+    image: `${process.env.PUBLIC_URL}/projects/monster-chatroom.png`,
   },
 ];
 
