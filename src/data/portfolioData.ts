@@ -1,4 +1,10 @@
-import { SkillCategory, Project, ContactInfo, SocialLink } from '../types';
+import {
+  SkillCategory,
+  Project,
+  ContactInfo,
+  SocialLink,
+  Experience,
+} from '../types';
 
 export const socialLinks: SocialLink[] = [
   {
@@ -104,6 +110,44 @@ export const projects: Project[] = [
     technologies: ['React', 'Socket.io', 'AI', 'Real-time'],
     githubUrl: 'https://github.com/sswanyuu/monster-chatroom',
     image: `${process.env.PUBLIC_URL}/projects/monster-chatroom.png`,
+  },
+];
+
+export const experiences: Experience[] = [
+  {
+    id: 'australiacareerforum',
+    company: 'Australia Career Forum',
+    position: 'Software Engineer',
+    duration: 'Aug 2024 - Present',
+    location: 'Sydney, Australia (Remote)',
+    type: 'full-time',
+    technologies: [
+      'React.js',
+      'RxJS',
+      'GraphQL',
+      'TypeScript',
+      'AWS Lambda',
+      'API Gateway',
+      'Stripe',
+    ],
+    website: 'https://australiacareerforum.com',
+  },
+  {
+    id: 'amazingtalker',
+    company: 'AmazingTalker',
+    position: 'Frontend Engineer',
+    duration: 'Dec 2022 - Oct 2024',
+    location: 'Taipei, Taiwan (Hybrid)',
+    type: 'full-time',
+    technologies: [
+      'React.js',
+      'Vue.js',
+      'Nuxt.js',
+      'Tailwind CSS',
+      'TypeScript',
+      'A/B Testing',
+    ],
+    website: 'https://amazingtalker.com',
   },
 ];
 

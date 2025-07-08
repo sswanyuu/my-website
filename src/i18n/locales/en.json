@@ -2,6 +2,7 @@
   "navigation": {
     "home": "Home",
     "about": "About",
+    "experience": "Experience",
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact"
@@ -16,6 +17,36 @@
   "about": {
     "title": "About Me",
     "description": "Hi there! I'm Olga, a passionate Frontend Engineer based in Sydney. I specialize in creating beautiful, responsive web applications using React and Vue.js. With a keen eye for design and a love for clean code, I bring ideas to life through modern web technologies. When I'm not coding, you'll find me exploring Sydney's amazing coffee scene or diving into the latest frontend trends."
+  },
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "My professional journey in software development",
+    "achievements": "Key Achievements",
+    "technologies": "Technologies Used",
+    "visitWebsite": "Visit Website",
+    "types": {
+      "full-time": "Full-time",
+      "part-time": "Part-time",
+      "contract": "Contract",
+      "freelance": "Freelance"
+    },
+    "australiacareerforum": {
+      "achievements": [
+        "Developed a web app with annual membership system and event registration powered by Stripe integration, supporting 20+ events and thousands of members",
+        "Introduced GraphQL Code Generator to automate type-safe API integration, reducing manual sync errors and accelerating frontend development",
+        "Built a Slack-integrated EC2 management tool using AWS Lambda and API Gateway, enabling non-engineers to manage servers and reducing costs by preventing idle usage",
+        "Facilitated brainstorming sessions with state leaders to shape product roadmaps"
+      ]
+    },
+    "amazingtalker": {
+      "achievements": [
+        "Ran 20+ A/B tests in collaboration with PMs, designers, and backend engineers to improve client page performance, achieving up to 20% increase in conversion rates",
+        "Built one-click auto-refund feature, improving turnaround time and handling 200+ refunds weekly",
+        "Refactored and modularized the components in the landing page, reducing template code size by over 40% and simplifying future updates across regions",
+        "Integrated ad tracking SDKs to report key user events (e.g., purchase), enabling accurate conversion attribution for campaigns reaching 50K+ MAUs",
+        "Led biweekly tech sharing sessions with FE team to promote best practices (e.g., Dark Theme, PR Train)"
+      ]
+    }
   },
   "skills": {
     "title": "Skills & Technologies",

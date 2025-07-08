@@ -30,8 +30,10 @@ const Navigation: React.FC = () => {
           <ul className="navbar-nav ms-auto me-3">
             <NavItem href="#home">{t('navigation.home')}</NavItem>
             <NavItem href="#about">{t('navigation.about')}</NavItem>
-            <NavItem href="#skills">{t('navigation.skills')}</NavItem>
+            <NavItem href="#experience">{t('navigation.experience')}</NavItem>
+
             <NavItem href="#projects">{t('navigation.projects')}</NavItem>
+            <NavItem href="#skills">{t('navigation.skills')}</NavItem>
             <NavItem href="#contact">{t('navigation.contact')}</NavItem>
           </ul>
           <div className="d-flex gap-2">

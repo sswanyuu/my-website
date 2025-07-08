@@ -25,6 +25,17 @@ export interface ContactInfo {
   href?: string;
 }
 
+export interface Experience {
+  id: string;
+  company: string;
+  position: string;
+  duration: string;
+  location: string;
+  type: 'full-time' | 'part-time' | 'contract' | 'freelance';
+  technologies: string[];
+  website?: string;
+}
+
 export interface ButtonProps {
   variant?: 'primary' | 'outline' | 'secondary' | 'icon-only';
   size?: 'large' | 'default' | 'small';
@@ -60,4 +71,8 @@ export interface ProjectCardProps {
 
 export interface ContactInfoItemProps {
   info: ContactInfo;
+}
+
+export interface ExperienceCardProps {
+  experience: Experience;
 }

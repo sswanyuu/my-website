@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="home" className="min-vh-100 d-flex align-items-center py-5">
+    <section id="home" className="min-vh-100 d-flex align-items-center py-3">
       <div className="container">
         <div className="row align-items-center g-5">
           <div className="col-lg-6">

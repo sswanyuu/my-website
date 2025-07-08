@@ -8,6 +8,7 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import {
   Hero,
   About,
+  Experience,
   Skills,
   Projects,
   Contact,
@@ -23,8 +24,9 @@ const App: React.FC = () => {
           <Navigation />
           <Hero />
           <About />
-          <Skills />
+          <Experience />
           <Projects />
+          <Skills />
           <Contact />
           <Footer />
         </div>
